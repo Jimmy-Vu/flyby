@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --bg: #e7dcc6;
+  --panel: #f6f0e3;
+  --fg: #2b2418;
+  --muted: #7a6e58;
+  --border: #d3c5a5;
+  --accent: #1f4fd8;
+  --paper: #e9e8e1;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-accent: var(--accent);
+  --color-paper: var(--paper);
+}
+
+body {
+  @apply bg-bg text-fg font-sans;
+}
